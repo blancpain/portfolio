@@ -1,0 +1,40 @@
+.title,
+.subTitle {
+  letter-spacing: -0.03em;
+  align-self: center;
+}
+
+.title {
+  color: var(--mantine-color-gray-2);
+  font-size: 115px;
+  font-weight: 800;
+
+  @media (max-width: $mantine-breakpoint-lg) {
+    font-size: 80px;
+  }
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 60px;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 30px;
+  }
+}
+
+.subTitle {
+  color: var(--mantine-color-gray-2);
+  font-size: 70px;
+  font-weight: 100;
+
+  @media (max-width: $mantine-breakpoint-lg) {
+    font-size: 50px;
+  }
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 40px;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 15px;
+  }
+}

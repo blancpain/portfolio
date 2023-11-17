@@ -5,6 +5,7 @@ import { App } from './App';
 
 const theme = createTheme({
   /** theme overrides here */
+  fontFamily: 'Jost, sans-serif',
 });
 
 // TODO: no strict mode for production

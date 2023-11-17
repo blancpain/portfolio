@@ -1,0 +1,8 @@
+.container {
+  background-color: var(--mantine-color-dark-6);
+  min-height: calc(100vh - 60px);
+  margin: 30px;
+  border-radius: 50px;
+  /* TODO: padding needs to be dynamic*/
+  padding: 50px;
+}
