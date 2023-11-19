@@ -1,6 +1,6 @@
 import '@mantine/core/styles.css';
 import { Paper } from '@mantine/core';
-import { About, Intro, Projects, Skills } from '@/components';
+import { About, Intro, Projects, Skills, Contact } from '@/components';
 
 // TODO: fix font sizes/sizes in general for all the range of screen sizes - too small atm on mobile
 
@@ -11,6 +11,7 @@ export function App() {
       <About />
       <Projects />
       <Skills />
+      <Contact />
     </Paper>
   );
 }
