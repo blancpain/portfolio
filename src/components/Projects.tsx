@@ -1,10 +1,10 @@
-import { Box, Button, Flex, Group, Image, Text } from '@mantine/core';
+import { Box, Flex, Group, Image, Text } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { motion } from 'framer-motion';
 import { nanoid } from 'nanoid';
 import { Card } from './Card';
 import classes from '../styles/Project.module.css';
 import { mangifyGif, battleshipGif, watchCoGif } from '@/assets';
+import { Link } from './elements/Link';
 
 type TprojectData = {
   title: string;
@@ -31,39 +31,35 @@ const projectData: TprojectData[] = [
     siteUrl: 'https://blancpain.github.io/shopping-cart/',
   },
   {
-    title: 'battleship',
-    description:
-      'The classic Battleships game implemented using the power trio of web development: JavaScript, HTML, and CSS',
+    title: 'battleships',
+    description: 'The classic Battleships game implemented using pure JavaScript, HTML, and CSS',
     gif: battleshipGif,
     githubRepoUrl: 'https://github.com/blancpain/battleship',
     siteUrl: 'https://blancpain.github.io/battleship/',
   },
 ];
 
-// TODO: move styles to separate file, add more projects as some sort of da a structure...
 export function Project({ title, gif, description, githubRepoUrl, siteUrl }: TprojectData) {
   // NOTE: custom hook to change direction at smaller screen sizes, if no value we assume true i.e. column
   const isColumn = useMediaQuery('(max-width: 48em)');
 
   return (
     <Card isColumn={isColumn ?? true}>
-      <a href={siteUrl} target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
-        <motion.div whileHover={{ scale: 1.2 }}>
-          <Box w={{ base: '100%', xs: '415px', sm: '415px', lg: '400px', xl: '400px' }} mr={70}>
-            <Image src={gif} radius="lg" style={{ border: '1px solid #25262B' }} />
-          </Box>
-        </motion.div>
-      </a>
-      <Flex direction="column">
+      <Box w={{ base: '100%', xs: '415px', sm: '415px', lg: '400px', xl: '400px' }} mr={70}>
+        <Link href={siteUrl}>
+          <Image src={gif} radius="lg" style={{ border: '1px solid #25262B' }} />
+        </Link>
+      </Box>
+      <Flex direction="column" gap={10} className={classes.textContainer}>
         <Text className={classes.title}>{title}</Text>
         <Text className={classes.subTitle}>{description}</Text>
-        <Group>
-          <Button component="a" href={githubRepoUrl} target="_blank">
-            GitHub
-          </Button>
-          <Button component="a" href={siteUrl} target="_blank">
-            Preview
-          </Button>
+        <Group p={0} m={0}>
+          <Link href={githubRepoUrl}>
+            <Text className={classes.link}>GitHub</Text>
+          </Link>
+          <Link href={siteUrl}>
+            <Text className={classes.link}>Preview</Text>
+          </Link>
         </Group>
       </Flex>
     </Card>

@@ -3,6 +3,12 @@
   min-height: calc(100vh - 60px);
   margin: 30px;
   border-radius: 50px;
-  /* TODO: padding needs to be dynamic*/
   padding: 50px;
+
+  @media (max-width: $mantine-breakpoint-lg) {
+    padding: 30px;
+  }
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: 20px;
+  }
 }
