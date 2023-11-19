@@ -4,7 +4,7 @@ import classes from '../styles/Intro.module.css';
 
 export function Intro() {
   return (
-    <Card>
+    <Card isColumn>
       <Text className={classes.title}>Yasen Dimitrov</Text>
       <Text className={classes.subTitle}>full-stack web developer</Text>
     </Card>

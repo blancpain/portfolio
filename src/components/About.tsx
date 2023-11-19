@@ -4,7 +4,7 @@ import classes from '../styles/About.module.css';
 
 export function About() {
   return (
-    <Card>
+    <Card isColumn>
       <Text className={classes.title}>about</Text>
       <Text className={classes.subTitle}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit aspernatur
