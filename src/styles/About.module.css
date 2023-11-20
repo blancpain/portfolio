@@ -1,12 +1,13 @@
 .title,
-.subTitle {
+.text {
   letter-spacing: -0.03em;
+  color: var(--mantine-color-gray-2);
 }
 
 .title {
-  color: var(--mantine-color-gray-2);
   font-size: 115px;
   font-weight: 800;
+  padding-bottom: 30px;
 
   @media (max-width: $mantine-breakpoint-lg) {
     font-size: 80px;
@@ -20,16 +21,12 @@
   }
 }
 
-.subTitle {
-  color: var(--mantine-color-gray-2);
-  font-size: 30px;
-  font-weight: 100;
+.text {
+  font-size: 20px;
+  font-weight: 400;
 
-  @media (max-width: $mantine-breakpoint-lg) {
-    font-size: 30px;
-  }
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 15px;
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 12px;
+    padding: 0 20px 0 20px;
   }
 }

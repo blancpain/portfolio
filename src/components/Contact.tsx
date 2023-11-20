@@ -7,7 +7,7 @@ import { Link } from './elements/Link';
 export function Contact() {
   return (
     <Card isColumn>
-      <Text className={classes.title}>Contact</Text>
+      <Text className={classes.title}>contact</Text>
       <Stack gap={20}>
         <Link href="mailto:y_dimitrov@ymail.com">
           <Button

@@ -2,12 +2,13 @@
   color: var(--mantine-color-gray-2);
   font-size: 115px;
   font-weight: 800;
+  padding-bottom: 30px;
 
   @media (max-width: $mantine-breakpoint-lg) {
     font-size: 80px;
   }
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
@@ -16,5 +17,11 @@
   height: 60px;
   &:hover {
     color: #fcca46;
+  }
+  @media (max-width: $mantine-breakpoint-lg) {
+    font-size: 35px;
+  }
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 20px;
   }
 }

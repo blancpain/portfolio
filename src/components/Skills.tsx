@@ -9,7 +9,7 @@ function Skill({ name, icon }: TskillData) {
   return (
     <Stack align="center">
       {icon}
-      <Text>{name}</Text>
+      <Text className={classes.iconText}>{name}</Text>
     </Stack>
   );
 }
@@ -22,7 +22,7 @@ export function Skills() {
   return (
     <Card isColumn>
       <Text className={classes.title}>Skills</Text>
-      <Flex gap={15} wrap="wrap" className={classes.skillsContainer}>
+      <Flex wrap="wrap" justify="center" className={classes.skillsContainer}>
         {skillsList}
       </Flex>
     </Card>

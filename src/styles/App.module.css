@@ -1,0 +1,10 @@
+* {
+  &::selection {
+    background-color: #fcca46;
+    color: #000;
+  }
+}
+
+.main {
+  overflow-y: auto;
+}
