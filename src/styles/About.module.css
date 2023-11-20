@@ -13,20 +13,38 @@
     font-size: 80px;
   }
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 60px;
+    font-size: 65px;
   }
 
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 .text {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
 
-  @media (max-width: $mantine-breakpoint-xs) {
-    font-size: 12px;
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 20px;
     padding: 0 20px 0 20px;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+  }
+}
+
+.textContainer {
+  align-items: center;
+  gap: 20px;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    align-items: flex-start;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    align-items: flex-start;
   }
 }

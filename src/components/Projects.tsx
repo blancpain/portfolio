@@ -9,13 +9,13 @@ import { projectData } from '@/content/projects';
 
 export function Project({ title, gif, description, githubRepoUrl, siteUrl }: TprojectData) {
   // NOTE: mantine hook to change direction at smaller screen sizes, if no value we assume true i.e. column
-  const isColumn = useMediaQuery('(max-width: 48em)');
+  const isColumn = useMediaQuery('(max-width: 63em)');
 
   return (
     <Card isColumn={isColumn ?? true}>
       <Box w={{ base: '100%', xs: '415px', sm: '415px', lg: '450px', xl: '500px' }} mr={70}>
         <Link href={siteUrl}>
-          <Image src={gif} radius="lg" style={{ border: '1px solid #25262B' }} />
+          <Image src={gif} className={classes.gifContainer} />
         </Link>
       </Box>
       <Flex direction="column" gap={10} className={classes.textContainer}>

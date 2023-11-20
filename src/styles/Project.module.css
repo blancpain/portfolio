@@ -10,11 +10,7 @@
   font-weight: 800;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 20px;
-  }
-
-  @media (max-width: $mantine-breakpoint-xs) {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -23,11 +19,11 @@
   font-weight: 100;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
@@ -39,27 +35,32 @@
   }
 
   @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
 .textContainer {
   max-width: 400px;
 
-  @media (max-width: $mantine-breakpoint-sm) {
-    /* align-self: flex-start; */
-    /* padding-left: 10px; */
+  @media (max-width: $mantine-breakpoint-lg) {
     padding-top: 20px;
   }
 
   @media (max-width: $mantine-breakpoint-xs) {
     align-self: flex-start;
     padding-left: 10px;
-    padding-top: 20px;
     max-width: 250px;
   }
+}
+
+.gifContainer {
+  &::selection {
+    background-color: transparent;
+  }
+  border-radius: 15px;
+  border: 1px solid #25262b;
 }

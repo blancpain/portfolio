@@ -17,7 +17,7 @@
   }
 
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
@@ -35,6 +35,6 @@
   }
 
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: 15px;
+    font-size: 18px;
   }
 }

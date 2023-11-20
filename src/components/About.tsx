@@ -6,7 +6,7 @@ export function About() {
   return (
     <Card isColumn>
       <Text className={classes.title}>about</Text>
-      <Flex direction="column" gap={20} align="center">
+      <Flex direction="column" className={classes.textContainer}>
         <Text className={classes.text}>
           Finance professional turned full-stack developer based in Sofia, Bulgaria.
         </Text>
