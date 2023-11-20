@@ -19,7 +19,7 @@ export const projectData: TprojectData[] = [
   },
   {
     title: 'watchCo',
-    description: 'A showcase e-commerce site for luxury watches develped with React.',
+    description: 'A showcase e-commerce site for luxury watches developed with React.',
     gif: watchCoGif,
     githubRepoUrl: 'https://github.com/blancpain/shopping-cart',
     siteUrl: 'https://blancpain.github.io/shopping-cart/',

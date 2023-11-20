@@ -1,5 +1,4 @@
 import {
-  SiChakraui,
   SiCss3,
   SiCypress,
   SiDocker,
@@ -14,8 +13,10 @@ import {
   SiNginx,
   SiNodedotjs,
   SiPostgresql,
+  SiPrisma,
   SiReact,
   SiRedux,
+  SiSequelize,
   SiTypescript,
   SiVite,
   SiVitest,
@@ -82,6 +83,14 @@ export const allSkills: TskillData[] = [
     icon: <SiNginx className={classes.icon} />,
   },
   {
+    name: 'Prisma',
+    icon: <SiPrisma className={classes.icon} />,
+  },
+  {
+    name: 'Sequelize',
+    icon: <SiSequelize className={classes.icon} />,
+  },
+  {
     name: 'PostgreSQL',
     icon: <SiPostgresql className={classes.icon} />,
   },
@@ -101,11 +110,6 @@ export const allSkills: TskillData[] = [
     name: 'MantineUI',
     icon: <SiMantine className={classes.icon} />,
   },
-  {
-    name: 'ChakraUI',
-    icon: <SiChakraui className={classes.icon} />,
-  },
-
   {
     name: 'Vite',
     icon: <SiVite className={classes.icon} />,
