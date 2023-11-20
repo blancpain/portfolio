@@ -6,9 +6,6 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 // https://vitejs.dev/config/
 // eslint-disable-next-line import/no-default-export
 export default defineConfig({
+  base: '/portfolio',
   plugins: [react(), tsconfigPaths()],
-  base: './',
-  build: {
-    outDir: 'build',
-  },
 });
