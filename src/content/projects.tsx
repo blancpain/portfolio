@@ -12,7 +12,7 @@ export const projectData: TprojectData[] = [
   {
     title: 'mangify',
     description:
-      'A full-stack meal planning app written in TS, React, Node, Express, and PostgreSQL.',
+      'A full-stack meal planning app written in TS, implemented with React, Node, Express, and PostgreSQL.',
     gif: mangifyGif,
     githubRepoUrl: 'https://github.com/blancpain/mangify',
     siteUrl: 'https://mangify.org',
