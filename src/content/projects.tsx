@@ -26,7 +26,7 @@ export const projectData: TprojectData[] = [
   },
   {
     title: 'battleships',
-    description: 'The classic Battleships game implemented using pure JavaScript, HTML, and CSS',
+    description: 'The classic Battleships game implemented using pure JavaScript, HTML, and CSS.',
     gif: battleshipGif,
     githubRepoUrl: 'https://github.com/blancpain/battleship',
     siteUrl: 'https://blancpain.github.io/battleship/',
