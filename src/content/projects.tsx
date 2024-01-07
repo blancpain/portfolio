@@ -6,6 +6,7 @@ export type TprojectData = {
   gif: string;
   githubRepoUrl: string;
   siteUrl: string;
+  id: string;
 };
 
 export const projectData: TprojectData[] = [
@@ -16,6 +17,7 @@ export const projectData: TprojectData[] = [
     gif: mangifyGif,
     githubRepoUrl: 'https://github.com/blancpain/mangify',
     siteUrl: 'https://mangify.org',
+    id: 'mangify',
   },
   {
     title: 'watchCo',
@@ -23,6 +25,7 @@ export const projectData: TprojectData[] = [
     gif: watchCoGif,
     githubRepoUrl: 'https://github.com/blancpain/shopping-cart',
     siteUrl: 'https://blancpain.github.io/shopping-cart/',
+    id: 'watchCo',
   },
   {
     title: 'battleships',
@@ -30,5 +33,6 @@ export const projectData: TprojectData[] = [
     gif: battleshipGif,
     githubRepoUrl: 'https://github.com/blancpain/battleship',
     siteUrl: 'https://blancpain.github.io/battleship/',
+    id: 'battleships',
   },
 ];

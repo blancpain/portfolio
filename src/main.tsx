@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { MantineProvider, createTheme } from '@mantine/core';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { App } from './App';
 
 const theme = createTheme({
@@ -7,8 +8,16 @@ const theme = createTheme({
   fontFamily: 'Jost, sans-serif',
 });
 
+const router = createBrowserRouter([
+  {
+    path: '/portfolio',
+    index: true,
+    element: <App />,
+  },
+]);
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <MantineProvider theme={theme}>
-    <App />
+    <RouterProvider router={router} />
   </MantineProvider>,
 );
