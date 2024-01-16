@@ -1,4 +1,4 @@
-import { mangifyGif, battleshipGif, watchCoGif } from '@/assets';
+import { mangifyGif, battleshipGif, watchCoGif, spaceVueGif } from '@/assets';
 
 export type TprojectData = {
   title: string;
@@ -18,6 +18,15 @@ export const projectData: TprojectData[] = [
     githubRepoUrl: 'https://github.com/blancpain/mangify',
     siteUrl: 'https://mangify.org',
     id: 'mangify',
+  },
+  {
+    title: 'spaceVue',
+    description:
+      'An interactive visualization of the solar system written in TypeScript and implemented with Vue, Firebase and NASA APIs.',
+    gif: spaceVueGif,
+    githubRepoUrl: 'https://github.com/blancpain/space-vue',
+    siteUrl: 'https://blancpain.github.io/space-vue',
+    id: 'spaceVue',
   },
   {
     title: 'watchCo',
